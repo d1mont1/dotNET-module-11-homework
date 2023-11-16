@@ -105,9 +105,26 @@ namespace dotNET_module_11_homework
             }
         }
 
+        static void ex3()
+        {
+            Cat myCat = new Cat();
+
+            Console.WriteLine("Уровень голода до еды: " + myCat.HungerLevel);
+
+            myCat.Eat(Food.Fish); // Покормим кошку рыбой
+            Console.WriteLine("Уровень голода после рыбы: " + myCat.HungerLevel);
+
+            myCat.Eat(Food.Mouse); // Покормим кошку мышью
+            Console.WriteLine("Уровень голода после мыши: " + myCat.HungerLevel);
+
+            myCat.Eat(Food.Milk); // Покормим кошку молоком
+            Console.WriteLine("Уровень голода после молока: " + myCat.HungerLevel);
+        }
+
         static void Main(string[] args)
         {
-            ex1();
+            //ex1();
+            ex3();
         }
     }
 }
